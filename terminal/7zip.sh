@@ -1,0 +1,1 @@
+pacman -S 7zip

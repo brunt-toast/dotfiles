@@ -1,0 +1,33 @@
+[core]
+	editor = nvim
+	logallrefupdates = true
+	ignorecase = false
+	hideDotFiles = false
+[alias]
+	back = !/bin/bash "$HOME/.brunt-dotfiles/bin/git-back"
+	hist = log --all --graph --pretty=format:'%C(auto)%h %s%d %C(bold black)<%aN>%Creset'
+	edit = "!f() { git -c rebase.autoSquash=false rebase -i --no-autosquash --autostash $1 }; f"
+    hooksPath = ~/.brunt-dotfiles/config/git/hooks
+[init]
+	defaultBranch = main
+[merge]
+	tool = kdiff3
+[rerere]
+	enabled = 1
+	autoupdate = 1
+[web]
+	browser = firefox
+[color "status"]
+	changed = blue bold
+[url "https://github.com/"]
+	insteadOf = gh:
+[url "https://aur.archlinux.org/"]
+    insteadOf = aur:
+[advice]
+	detachedHead = false
+[fetch]
+	all = true
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+[diff]
+	tool = nvimdiff

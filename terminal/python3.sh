@@ -1,0 +1,1 @@
+pacman -S python3 python-pip python-pipx python-setuptools
