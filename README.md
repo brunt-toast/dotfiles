@@ -2,21 +2,6 @@
 
 For use on a fresh Arch install (with DE configured). Installs applications and utilities. 
 
-## Prerequisite
-
-The script runs as root. Makepkg is not allowed as root. 
-
-Install yay. 
-
-```bash
-sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
-makepkg -si
-cd ..
-rm -r yay-bin
-```
-
 ## Run 
 
 ```bash
