@@ -24,3 +24,6 @@ Note that despite `yes`, some interactivity is required.
 |- services                # Registration for systemctl services.
 |- terminal                # Terminal utilities.
 ```
+
+## TODO
+Discord, Spotify, openssh, telegram, signal, calibre, tor, yt-dlp, wget, krita
